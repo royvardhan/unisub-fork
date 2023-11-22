@@ -6,15 +6,23 @@ import { ERC20NameBytes } from '../types/Factory/ERC20NameBytes'
 import { User, Bundle, Token, LiquidityPosition, LiquidityPositionSnapshot, Pair } from '../types/schema'
 import { Factory as FactoryContract } from '../types/templates/Pair/Factory'
 import { TokenDefinition } from './tokenDefinition'
-
 export const ADDRESS_ZERO = '0x0000000000000000000000000000000000000000'
 export const FACTORY_ADDRESS = '0xc009a670e2b02e21e7e75ae98e254f467f7ae257'
+export const AVAX_USDC_PAIR = '0xf4003F4efBE8691B60249E6afbD307aBE7758adb'
+
+export const VPND_AVAX_PAIR = '0x4cd20F3e2894Ed1A0F4668d953a98E689c647bfE'
+
+export const AVAX_DECIMALS = 18
+export const USDC_DECIMALS = 6
+
+export const WAVAX_ADDRESS = '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7'
 
 export let ZERO_BI = BigInt.fromI32(0)
 export let ONE_BI = BigInt.fromI32(1)
 export let ZERO_BD = BigDecimal.fromString('0')
 export let ONE_BD = BigDecimal.fromString('1')
 export let BI_18 = BigInt.fromI32(18)
+export let BIGINT_TEN = BigInt.fromI32(10)
 
 export let factoryContract = FactoryContract.bind(Address.fromString(FACTORY_ADDRESS))
 
